@@ -1,5 +1,7 @@
 # Milla · Paquetería con otra mirada
 
+[Ver demo](https://arcas0803.github.io/milla-parcel-landing/) · [Caso de estudio](docs/case-study.md) · [Informe de calidad](audits/audit.md)
+
 Landing de una **marca ficticia de paquetería**, desarrollada como caso de estudio de diseño y frontend. Un proyecto completo, ligero y responsive que convierte una propuesta de marca en dos recorridos interactivos: cotizar y seguir un paquete.
 
 ![Vista de escritorio de Milla](audits/screenshots/hero.jpg)
