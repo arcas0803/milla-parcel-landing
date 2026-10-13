@@ -1,0 +1,60 @@
+---
+import Layout from "../components/Layout.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout title="Milla · Información y privacidad de la demo">
+  <header class="article-header container">
+    <a href={base} class="logo" aria-label="Milla, inicio">
+      milla<span>.</span>
+    </a>
+    <a href={base}>Volver a la landing ↗</a>
+  </header>
+  <main id="main" class="article-page container">
+    <p class="eyebrow">INFORMACIÓN DEL PROYECTO</p>
+    <h1>
+      Todo,
+      <br />
+      <em>bien claro.</em>
+    </h1>
+    <h2 id="aviso">Una demo, no un transportista</h2>
+    <p>
+      Milla es una identidad ficticia creada como proyecto de portfolio. No
+      presta servicios de transporte, no acepta pagos y no contrata envíos.
+      Todas las tarifas, plazos y estados de seguimiento son ilustrativos.
+    </p>
+    <p>
+      Los consejos de embalaje son orientativos. Una empresa real debe definir
+      sus condiciones de transporte, restricciones de mercancías, dimensiones,
+      responsabilidad y cobertura antes de ofrecer un servicio.
+    </p>
+    <h2 id="privacidad">Privacidad en esta implementación</h2>
+    <p>
+      El cotizador y el seguimiento se ejecutan en tu navegador. La aplicación
+      no envía los valores del formulario a un servidor, no usa almacenamiento
+      local y no incluye cookies ni herramientas de analítica de terceros.
+    </p>
+    <p>
+      Si eliges copiar o descargar un resumen, tu navegador crea ese resultado a
+      petición tuya. No se envía a Milla. Los valores del formulario se pierden
+      al recargar o cerrar la página, salvo que tu navegador restaure su estado
+      por sus propias funciones.
+    </p>
+    <p>
+      El proveedor de alojamiento de una versión publicada puede tratar
+      información técnica de acceso según su propia política. Antes de convertir
+      este concepto en una actividad real, hay que adaptar esta información al
+      responsable y proveedor efectivos.
+    </p>
+    <h2>Contenido y accesibilidad</h2>
+    <p>
+      La interfaz incluye etiquetas de formulario, navegación por teclado,
+      enlace para saltar al contenido y una variante con movimiento reducido.
+      Las auditorías automáticas del repositorio no equivalen a una
+      certificación de accesibilidad.
+    </p>
+    <a class="button" href={`${base}proyecto/`}>
+      Ver caso de estudio <span aria-hidden="true">↗</span>
+    </a>
+  </main>
+</Layout>

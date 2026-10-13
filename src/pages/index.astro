@@ -1,0 +1,540 @@
+---
+import Layout from "../components/Layout.astro";
+import Icon from "../components/Icon.astro";
+import ParcelScene from "../components/ParcelScene.astro";
+const base = import.meta.env.BASE_URL;
+const faq = [
+  [
+    "¿Cómo funciona esta página?",
+    "Milla es una marca ficticia creada como caso de estudio. Puedes probar el cotizador y el seguimiento, pero no contratar envíos. Las tarifas, plazos y servicios son ilustrativos.",
+  ],
+  [
+    "¿Qué incluye el precio del cotizador?",
+    "La simulación suma una tarifa base, un suplemento por peso superior a 1 kg y otro para envíos entre provincias. El resultado muestra un impuesto ilustrativo del 21 %. No es una oferta comercial ni asesoramiento fiscal.",
+  ],
+  [
+    "¿Dónde puedo enviar un paquete?",
+    "El cotizador de esta demo contempla códigos postales de España peninsular y paquetes de 0,1 a 20 kg. Baleares, Canarias, Ceuta, Melilla y destinos internacionales quedan fuera de esta simulación.",
+  ],
+  [
+    "¿Cómo preparo mi paquete?",
+    "Como orientación general, utiliza una caja adecuada, protege el contenido para que no se mueva y cierra las juntas con cinta. Retira etiquetas antiguas. Un servicio real debe confirmar restricciones, dimensiones y condiciones de transporte.",
+  ],
+  [
+    "¿Puedo probar el seguimiento?",
+    "Sí. Usa MILLA-2026 para un paquete en reparto, MILLA-2025 para uno entregado o MILLA-2024 para una incidencia. Son datos fijos de ejemplo; no representan envíos reales.",
+  ],
+  [
+    "¿Se guardan mis datos?",
+    "No. Los cálculos se realizan en tu navegador. Esta página no pide nombre, dirección, teléfono ni email, no usa analítica de terceros y no guarda los valores al cerrar o recargar la página.",
+  ],
+];
+---
+
+<Layout>
+  <div class="demo-bar">
+    <span class="demo-dot"></span> Una marca imaginaria. Una experiencia real de
+    diseño.{" "}
+    <a href={`${base}proyecto/`}>
+      Ver caso de estudio <span aria-hidden="true">↗</span>
+    </a>
+  </div>
+  <header class="header">
+    <div class="container nav-wrap">
+      <a href={base} class="logo" aria-label="Milla, inicio" translate="no">
+        milla<span>.</span>
+        <span class="logo-speed" aria-hidden="true">
+          ↗
+        </span>
+      </a>
+      <button
+        class="menu-toggle"
+        aria-controls="navigation"
+        aria-expanded="false"
+        aria-label="Abrir menú"
+      >
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="navigation" aria-label="Navegación principal">
+        <a href="#servicios">Servicios</a>
+        <a href="#como-funciona">Cómo funciona</a>
+        <a href="#seguimiento">Sigue tu paquete</a>
+        <a href="#preguntas">Preguntas frecuentes</a>
+        <a href="#cotizador" class="button button-small">
+          Calcular mi envío <Icon size={18} />
+        </a>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-heading">
+      <div class="hero-copy">
+        <p class="eyebrow">
+          <span class="little-line"></span> DE TU PUERTA A SU PRÓXIMA HISTORIA
+        </p>
+        <h1 id="hero-heading">
+          Tú lo preparas.
+          <br />
+          Nosotros lo
+          <br />
+          <em>acercamos.</em>
+        </h1>
+        <p class="hero-description">
+          Tu primer pedido. Un regalo inesperado. Ese proyecto que despega.
+          Paquetería pensada para todo lo que tienes por enviar.
+        </p>
+        <div class="hero-actions">
+          <a href="#cotizador" class="button">
+            Calcular mi envío <Icon />
+          </a>
+          <a href="#como-funciona" class="text-link">
+            Así de fácil <span aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="hero-note">
+          <Icon name="check" size={16} /> Sin registro. Sin compromiso.
+          Cotización de ejemplo.
+        </p>
+      </div>
+      <div class="hero-visual">
+        <div class="visual-caption">
+          <span>EST. 2026 / CONCEPTO</span>
+          <span>DE A A B, CON CUIDADO.</span>
+        </div>
+        <ParcelScene />
+        <div class="visual-footer">
+          <span>
+            Un pequeño paquete.
+            <br />
+            <strong>Un montón de posibilidades.</strong>
+          </span>
+          <span class="round-arrow" aria-hidden="true">
+            ↗
+          </span>
+        </div>
+      </div>
+    </section>
+    <div
+      class="promise-strip container"
+      aria-label="Características del concepto"
+    >
+      <div>
+        <Icon name="box" />
+        <span>Recogida a tu medida</span>
+      </div>
+      <div>
+        <Icon name="pin" />
+        <span>Cada paso, a la vista</span>
+      </div>
+      <div>
+        <Icon name="shield" />
+        <span>El cuidado va incluido</span>
+      </div>
+      <div>
+        <Icon name="clock" />
+        <span>Tu tiempo importa</span>
+      </div>
+    </div>
+    <section id="servicios" class="section container">
+      <div class="section-top">
+        <div>
+          <p class="eyebrow">01 / LO QUE NECESITAS, SIN RODEOS</p>
+          <h2>
+            No todos los paquetes
+            <br />
+            llevan <em>la misma prisa.</em>
+          </h2>
+        </div>
+        <p>
+          Un envío puntual o el día a día de tu negocio. Hay una Milla para cada
+          momento.
+        </p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card">
+          <div class="service-card-top">
+            <span class="service-icon">
+              <Icon name="box" size={30} />
+            </span>
+            <span class="service-number">/ 01</span>
+          </div>
+          <h3>Milla Estándar</h3>
+          <p>
+            Para lo importante que puede esperar un poquito. Un ritmo cómodo
+            para tus envíos de cada día.
+          </p>
+          <div class="service-detail">
+            <span>2–3 días laborables*</span>
+            <span>
+              Desde <strong>5,93 €</strong>*
+            </span>
+          </div>
+          <a href="#cotizador" data-service="standard" class="service-link">
+            Calcular mi envío <Icon size={20} />
+          </a>
+        </article>
+        <article class="service-card service-express">
+          <div class="service-card-top">
+            <span class="service-icon">
+              <Icon name="truck" size={30} />
+            </span>
+            <span class="service-number">/ 02</span>
+          </div>
+          <h3>Milla Express</h3>
+          <p>
+            Para ese “lo necesito cuanto antes”. La opción ágil cuando tu
+            paquete tiene planes.
+          </p>
+          <div class="service-detail">
+            <span>1–2 días laborables*</span>
+            <span>
+              Desde <strong>9,56 €</strong>*
+            </span>
+          </div>
+          <a href="#cotizador" data-service="express" class="service-link">
+            Calcular mi envío <Icon size={20} />
+          </a>
+        </article>
+        <article class="service-card">
+          <div class="service-card-top">
+            <span class="service-icon">
+              <Icon name="globe" size={30} />
+            </span>
+            <span class="service-number">/ 03</span>
+          </div>
+          <h3>Milla Negocios</h3>
+          <p>
+            Tu tienda crece. Tu logística también. Un concepto de servicio para
+            conectar pedidos y personas.
+          </p>
+          <div class="service-detail">
+            <span>Pensado para ecommerce</span>
+            <span>
+              Propuesta <strong>a medida</strong>
+            </span>
+          </div>
+          <a href={`${base}proyecto/#negocios`} class="service-link">
+            Explorar el concepto <Icon size={20} />
+          </a>
+        </article>
+      </div>
+      <p class="footnote">
+        * Tarifas y plazos ficticios. Precios de ejemplo con impuesto
+        ilustrativo incluido, hasta 1 kg y dentro de una provincia. No se pueden
+        contratar envíos.
+      </p>
+    </section>
+    <section id="como-funciona" class="process-section">
+      <div class="container process-inner">
+        <div class="process-intro">
+          <p class="eyebrow">02 / MENOS VUELTAS. MÁS CAMINO.</p>
+          <h2>
+            De “lo tengo”
+            <br />a <em>“ya está”.</em>
+          </h2>
+          <p>
+            Enviar debería ser la parte fácil.
+            <br />
+            Así imaginamos tu próximo envío.
+          </p>
+          <a href="#cotizador" class="button button-light">
+            Calcular mi envío <Icon />
+          </a>
+        </div>
+        <ol class="steps">
+          <li>
+            <span class="step-number">01</span>
+            <div>
+              <h3>Cuéntanos adónde va.</h3>
+              <p>
+                Elige origen, destino y peso. Conoce el precio antes de dar el
+                siguiente paso.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">02</span>
+            <div>
+              <h3>Prepara algo que importa.</h3>
+              <p>
+                Una buena caja, contenido protegido y una etiqueta. Lo demás, en
+                buenas manos.
+              </p>
+            </div>
+          </li>
+          <li>
+            <span class="step-number">03</span>
+            <div>
+              <h3>Acompaña cada kilómetro.</h3>
+              <p>
+                Desde la recogida hasta la puerta de destino. Un seguimiento que
+                habla claro.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+    <section id="cotizador" class="section container quote-section">
+      <div class="quote-intro">
+        <p class="eyebrow">03 / HAZ LAS CUENTAS</p>
+        <h2>
+          El próximo paso
+          <br />
+          empieza <em>aquí.</em>
+        </h2>
+        <p>
+          Un precio claro. Desde el principio.
+          <br />
+          Prueba cuánto costaría tu paquete.
+        </p>
+        <div class="demo-note">
+          <span class="tag">MODO DEMO</span>
+          <p>
+            Este cálculo es orientativo. No contrata un envío ni te pide datos
+            personales.
+          </p>
+        </div>
+        <div class="small-parcel" aria-hidden="true">
+          <svg width="135" height="145" viewBox="0 0 135 145" fill="none">
+            <path d="m10 47 57-30 57 30-57 32L10 47Z" fill="#f4b581" />
+            <path d="m10 47 57 32v57l-57-32V47Z" fill="#db8e58" />
+            <path d="m67 79 57-32v57l-57 32V79Z" fill="#ed693b" />
+            <path d="m35 34 57 31 13-7-57-31-13 7Z" fill="#ffe4c2" />
+            <path d="m92 65 13-7v26l-13 7V65Z" fill="#ffe4c2" />
+          </svg>
+          <span>
+            Pequeño por fuera.
+            <br />
+            Importante por dentro.
+          </span>
+        </div>
+      </div>
+      <div class="quote-card">
+        <div class="quote-card-heading">
+          <h3>Calcula tu envío</h3>
+          <span class="tag">PENÍNSULA</span>
+        </div>
+        <noscript>
+          <p class="demo-note">
+            Activa JavaScript para utilizar el cotizador. El resto de la página
+            está disponible sin JavaScript.
+          </p>
+        </noscript>
+        <form id="quote-form" novalidate>
+          <div class="field-pair">
+            <div class="field">
+              <label for="origin">Código postal de origen</label>
+              <input
+                id="origin"
+                name="origin"
+                type="text"
+                inputmode="numeric"
+                autocomplete="postal-code"
+                maxlength="5"
+                placeholder="Ej. 28013…"
+                aria-describedby="origin-error"
+                required
+              />
+              <p id="origin-error" class="field-error"></p>
+            </div>
+            <div class="field">
+              <label for="destination">Código postal de destino</label>
+              <input
+                id="destination"
+                name="destination"
+                type="text"
+                inputmode="numeric"
+                autocomplete="off"
+                maxlength="5"
+                placeholder="Ej. 08001…"
+                aria-describedby="destination-error"
+                required
+              />
+              <p id="destination-error" class="field-error"></p>
+            </div>
+          </div>
+          <div class="field">
+            <label for="weight">
+              Peso del paquete <span>(kg)</span>
+            </label>
+            <div class="weight-wrap">
+              <input
+                id="weight"
+                name="weight"
+                type="number"
+                min="0.1"
+                max="20"
+                step="0.1"
+                inputmode="decimal"
+                autocomplete="off"
+                placeholder="Ej. 2…"
+                aria-describedby="weight-help weight-error"
+                required
+              />
+              <span aria-hidden="true">kg</span>
+            </div>
+            <p id="weight-help" class="field-help">
+              Entre 0,1 y 20 kg. La demo no calcula dimensiones.
+            </p>
+            <p id="weight-error" class="field-error"></p>
+          </div>
+          <fieldset class="service-choice">
+            <legend>¿Qué ritmo prefieres?</legend>
+            <div class="radio-grid">
+              <label>
+                <input type="radio" name="service" value="standard" checked />
+                <span>
+                  <strong>Estándar</strong>
+                  <small>2–3 días laborables</small>
+                </span>
+              </label>
+              <label>
+                <input type="radio" name="service" value="express" />
+                <span>
+                  <strong>Express</strong>
+                  <small>1–2 días laborables</small>
+                </span>
+              </label>
+            </div>
+          </fieldset>
+          <button type="submit" disabled class="button quote-submit">
+            Calcular mi envío <Icon />
+          </button>
+          <p class="quote-disclaimer">
+            Simulación local · sin registro · sin pagos
+          </p>
+        </form>
+        <div
+          id="quote-result"
+          class="quote-result"
+          hidden
+          aria-live="polite"
+          aria-atomic="true"
+        ></div>
+      </div>
+    </section>
+    <section id="seguimiento" class="tracking-section">
+      <div class="container tracking-inner">
+        <div>
+          <p class="eyebrow">04 / CERCA, INCLUSO DE LEJOS</p>
+          <h2>
+            ¿Por dónde va
+            <br />
+            <em>tu paquete?</em>
+          </h2>
+          <p>La tranquilidad de saber cuál es el siguiente paso.</p>
+        </div>
+        <div class="tracking-card">
+          <form id="tracking-form" novalidate>
+            <label for="tracking-code">Código de seguimiento</label>
+            <div class="tracking-input">
+              <input
+                id="tracking-code"
+                name="tracking"
+                type="text"
+                autocomplete="off"
+                spellcheck="false"
+                maxlength="30"
+                placeholder="Ej. MILLA-2026…"
+                aria-describedby="tracking-help tracking-error"
+                required
+              />
+              <button class="button" type="submit" disabled>
+                <span>Localizar</span>
+                <Icon name="search" size={20} />
+              </button>
+            </div>
+            <p id="tracking-error" class="field-error"></p>
+            <p id="tracking-help" class="field-help">
+              Prueba un envío ficticio:
+            </p>
+            <div class="example-codes">
+              <button type="button" data-tracking="MILLA-2026">
+                En reparto ↗
+              </button>
+              <button type="button" data-tracking="MILLA-2025">
+                Entregado ↗
+              </button>
+              <button type="button" data-tracking="MILLA-2024">
+                Incidencia ↗
+              </button>
+            </div>
+          </form>
+          <noscript>
+            <p>Activa JavaScript para consultar los envíos de ejemplo.</p>
+          </noscript>
+          <div
+            id="tracking-result"
+            class="tracking-result"
+            hidden
+            aria-live="polite"
+            aria-atomic="true"
+          ></div>
+        </div>
+      </div>
+    </section>
+    <section id="preguntas" class="section container faq-section">
+      <div>
+        <p class="eyebrow">05 / TODO UN POCO MÁS CLARO</p>
+        <h2>
+          Las dudas
+          <br />
+          también <em>viajan.</em>
+        </h2>
+        <p>Les damos respuesta antes de salir.</p>
+      </div>
+      <div class="faq-list">
+        {faq.map(([question, answer]) => (
+          <details>
+            <summary>
+              {question}
+              <span class="faq-plus" aria-hidden="true">
+                +
+              </span>
+            </summary>
+            <p>{answer}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+    <section class="final-cta container">
+      <div>
+        <p class="eyebrow">LO QUE IMPORTA, LLEGA.</p>
+        <h2>
+          Tu próxima historia.
+          <br />
+          <em>A un envío de distancia.</em>
+        </h2>
+      </div>
+      <a href="#cotizador" class="button">
+        Calcular mi envío <Icon />
+      </a>
+      <span class="cta-route" aria-hidden="true"></span>
+    </section>
+  </main>
+  <footer class="footer container">
+    <div class="footer-top">
+      <a href={base} class="logo" aria-label="Milla, inicio" translate="no">
+        milla<span>.</span>
+      </a>
+      <p>
+        Acortamos distancias.
+        <br />
+        Acercamos historias.
+      </p>
+      <nav aria-label="Información del proyecto">
+        <a href={`${base}proyecto/`}>Caso de estudio ↗</a>
+        <a href={`${base}legal/#privacidad`}>Privacidad</a>
+        <a href={`${base}legal/#aviso`}>Aviso de la demo</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Milla. Proyecto de portfolio.</span>
+      <span>Marca ficticia · Ningún envío es real.</span>
+      <a href="#main">Volver arriba ↑</a>
+    </div>
+  </footer>
+  <script src="../lib/interactions.ts"></script>
+</Layout>

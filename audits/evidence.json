@@ -1,0 +1,53 @@
+{
+  "visual": {
+    "status": "passed",
+    "note": "Capturas completas inspeccionadas a 375, 768, 1440 y 1920 px; hero, servicios, proceso, cotizador, seguimiento, FAQ y footer sin colisiones. Los recortes de CUA excluyen la barra vertical del navegador.",
+    "artifacts": [
+      "screenshots/mobile-375.jpg",
+      "screenshots/tablet-768.jpg",
+      "screenshots/desktop-1440.jpg",
+      "screenshots/wide-1920.jpg"
+    ]
+  },
+  "keyboard": {
+    "status": "passed",
+    "note": "Skip link con foco visible observado en CUA; menú, Escape, foco de error y FAQ con Enter verificados por pruebas.",
+    "artifacts": [
+      "tests.json"
+    ]
+  },
+  "reflow": {
+    "status": "passed",
+    "note": "Sin overflow a 320/375/768/1440/1920. 320 px representa ancho efectivo de reflow; no se simula una certificación de zoom en todos los navegadores.",
+    "artifacts": [
+      "tests.json",
+      "screenshots/reflow-320.jpg"
+    ]
+  },
+  "reducedMotion": {
+    "status": "passed",
+    "note": "prefers-reduced-motion: reduce elimina la animación SVG; verificado contra el estilo computado. No hay loops.",
+    "artifacts": [
+      "tests.json"
+    ]
+  },
+  "journeys": {
+    "status": "passed",
+    "note": "Cinco pruebas completas: errores y cálculos de cotización, cambio de servicio, descarga, tres seguimientos y desconocido, menú y FAQ, páginas auxiliares, contenido estático con ejecución JS desactivada. Copia revisada con alternativa de descarga.",
+    "artifacts": [
+      "tests.json",
+      "screenshots/quote-mobile.jpg",
+      "screenshots/tracking-mobile.jpg"
+    ]
+  },
+  "seo": {
+    "status": "passed",
+    "note": "lang es, title/description, metadatos, rutas auxiliares, robots y sitemap verificados. noindex es deliberado para marca ficticia; canonical y OG absoluto solo con SITE_URL. Sin schema de empresa ficticia.",
+    "artifacts": [
+      "summary.json",
+      "../src/components/Layout.astro",
+      "../src/pages/robots.txt.ts",
+      "../src/pages/sitemap.xml.ts"
+    ]
+  }
+}

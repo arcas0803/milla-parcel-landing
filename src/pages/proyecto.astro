@@ -1,0 +1,102 @@
+---
+import Layout from "../components/Layout.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout title="Milla · Caso de estudio de diseño y desarrollo">
+  <header class="article-header container">
+    <a href={base} class="logo" aria-label="Milla, inicio">
+      milla<span>.</span>
+    </a>
+    <a href={base}>Volver a la landing ↗</a>
+  </header>
+  <main id="main" class="article-page container">
+    <p class="eyebrow">DISEÑO + DESARROLLO / CASO DE ESTUDIO</p>
+    <h1>
+      De una idea
+      <br />a <em>cada detalle.</em>
+    </h1>
+    <p>
+      Milla es una marca ficticia de paquetería creada para explorar cómo una
+      experiencia clara, cercana y ligera puede acompañar a pequeños negocios y
+      personas que necesitan enviar un paquete.
+    </p>
+    <div class="article-callout">
+      <p>
+        <strong>Alcance del proyecto:</strong> identidad visual, estrategia de
+        contenido, diseño responsive, desarrollo estático, cotizador y
+        seguimiento simulados, accesibilidad y evaluación de rendimiento.
+      </p>
+    </div>
+    <h2>El reto</h2>
+    <p>
+      Construir una landing completa sin una empresa real ni material de marca.
+      El visitante debe entender la propuesta, comparar servicios y probar una
+      acción útil. El caso de estudio debe mostrar decisiones de producto y
+      desarrollo sin presentar datos ficticios como resultados reales.
+    </p>
+    <h2>La idea: acortar distancias</h2>
+    <p>
+      “Cada paquete, una nueva historia” conecta la logística con lo que hay
+      dentro: un pedido, un regalo o un proyecto. La identidad combina azul
+      tinta, naranja, papel crema y cajas ilustradas. Una ruta de puntos recorre
+      el concepto para expresar movimiento sin animaciones continuas.
+    </p>
+    <h2>Una experiencia con principio y final</h2>
+    <ul>
+      <li>
+        <strong>Explorar:</strong> entender los servicios Estándar, Express y el
+        concepto para negocios.
+      </li>
+      <li>
+        <strong>Calcular:</strong> introducir dos códigos postales y un peso,
+        elegir servicio y ver un desglose reproducible.
+      </li>
+      <li>
+        <strong>Conservar:</strong> copiar o descargar un resumen identificado
+        como simulación.
+      </li>
+      <li>
+        <strong>Consultar:</strong> explorar seguimiento en reparto, entregado e
+        incidencia, con mensajes claros ante códigos desconocidos.
+      </li>
+    </ul>
+    <h2>Decisiones técnicas</h2>
+    <p>
+      Astro genera HTML estático para que el contenido sea accesible antes de
+      ejecutar JavaScript. Tailwind 4 y una hoja de estilos con tokens sostienen
+      el diseño. TypeScript se limita a interacciones que lo necesitan; el
+      cálculo ocurre en el navegador.
+    </p>
+    <p>
+      La ilustración vectorial es propia, escala sin perder calidad y no
+      requiere descargar fotografías. Las fuentes de sistema evitan dependencias
+      externas. El diseño admite movimiento reducido, navegación con teclado y
+      pantallas estrechas.
+    </p>
+    <h2 id="negocios">Milla Negocios: siguiente fase</h2>
+    <p>
+      El concepto empresarial plantearía cargas de envíos por lotes, etiquetas y
+      conexión con una tienda online. Esta demo documenta esa dirección de
+      producto, pero no incluye integraciones, acuerdos comerciales ni un
+      formulario que prometa contactar con una empresa inexistente.
+    </p>
+    <h2>Lo que se puede comprobar</h2>
+    <p>
+      La documentación del repositorio contiene las pruebas de los recorridos,
+      capturas responsive e informes de auditoría. Los resultados de laboratorio
+      describen esta implementación y sus condiciones de medida. No demuestran
+      conversión, posicionamiento ni resultados comerciales.
+    </p>
+    <h2>Lo que necesita una empresa real</h2>
+    <p>
+      Tarifas y zonas verificadas, condiciones de transporte, API del operador,
+      gestión de datos y una revisión legal propia. El cotizador no comprueba la
+      existencia de cada código postal y sus reglas no sustituyen las de un
+      transportista.
+    </p>
+    <a class="button" href={`${base}#cotizador`}>
+      Probar el cotizador <span aria-hidden="true">→</span>
+    </a>
+  </main>
+</Layout>

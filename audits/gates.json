@@ -1,0 +1,364 @@
+{
+  "scope": "demo",
+  "gates": [
+    {
+      "id": "mobile: conditions",
+      "status": "passed",
+      "required": true,
+      "detail": "Reported form factor must match profile."
+    },
+    {
+      "id": "mobile: repetitions",
+      "status": "passed",
+      "required": true,
+      "detail": "At least 3 equivalent runs required."
+    },
+    {
+      "id": "mobile: largest-contentful-paint",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 902.1376,
+        "limit": 2500,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "mobile: cumulative-layout-shift",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 0,
+        "limit": 0.1,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "mobile: total-blocking-time",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 0,
+        "limit": 200,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "mobile: performance score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "mobile: accessibility score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "mobile: best-practices score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "mobile: seo score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 63,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "mobile: audit failures",
+      "status": "passed",
+      "required": true,
+      "detail": []
+    },
+    {
+      "id": "mobile: indexation",
+      "status": "not_applicable",
+      "required": true,
+      "detail": "noindex intentionally excluded only for demos."
+    },
+    {
+      "id": "mobile: opportunities",
+      "status": "pending",
+      "required": false,
+      "detail": [
+        {
+          "run": 1,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": "desktop: conditions",
+      "status": "passed",
+      "required": true,
+      "detail": "Reported form factor must match profile."
+    },
+    {
+      "id": "desktop: repetitions",
+      "status": "passed",
+      "required": true,
+      "detail": "At least 3 equivalent runs required."
+    },
+    {
+      "id": "desktop: largest-contentful-paint",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 242.11309999999997,
+        "limit": 2500,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "desktop: cumulative-layout-shift",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 0,
+        "limit": 0.1,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "desktop: total-blocking-time",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 0,
+        "limit": 200,
+        "scope": "lab"
+      }
+    },
+    {
+      "id": "desktop: performance score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "desktop: accessibility score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "desktop: best-practices score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 100,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "desktop: seo score",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 63,
+        "note": "Score completeness; issue-level results determine accessibility/SEO acceptance."
+      }
+    },
+    {
+      "id": "desktop: audit failures",
+      "status": "passed",
+      "required": true,
+      "detail": []
+    },
+    {
+      "id": "desktop: indexation",
+      "status": "not_applicable",
+      "required": true,
+      "detail": "noindex intentionally excluded only for demos."
+    },
+    {
+      "id": "desktop: opportunities",
+      "status": "pending",
+      "required": false,
+      "detail": [
+        {
+          "run": 1,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 2,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        },
+        {
+          "run": 3,
+          "id": "network-dependency-tree-insight",
+          "title": "Network dependency tree",
+          "score": 0,
+          "mode": "numeric",
+          "expected": false
+        }
+      ]
+    },
+    {
+      "id": "jsGzipBytes",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 2826,
+        "limit": 30720,
+        "scope": "Conservative build proxy, not route transfer."
+      }
+    },
+    {
+      "id": "cssGzipBytes",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "value": 6472,
+        "limit": 51200,
+        "scope": "Conservative build proxy, not route transfer."
+      }
+    },
+    {
+      "id": "visual",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Capturas completas inspeccionadas a 375, 768, 1440 y 1920 px; hero, servicios, proceso, cotizador, seguimiento, FAQ y footer sin colisiones. Los recortes de CUA excluyen la barra vertical del navegador.",
+        "artifacts": [
+          "screenshots/mobile-375.jpg",
+          "screenshots/tablet-768.jpg",
+          "screenshots/desktop-1440.jpg",
+          "screenshots/wide-1920.jpg"
+        ]
+      }
+    },
+    {
+      "id": "keyboard",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Skip link con foco visible observado en CUA; menú, Escape, foco de error y FAQ con Enter verificados por pruebas.",
+        "artifacts": [
+          "tests.json"
+        ]
+      }
+    },
+    {
+      "id": "reflow",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Sin overflow a 320/375/768/1440/1920. 320 px representa ancho efectivo de reflow; no se simula una certificación de zoom en todos los navegadores.",
+        "artifacts": [
+          "tests.json",
+          "screenshots/reflow-320.jpg"
+        ]
+      }
+    },
+    {
+      "id": "reducedMotion",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "prefers-reduced-motion: reduce elimina la animación SVG; verificado contra el estilo computado. No hay loops.",
+        "artifacts": [
+          "tests.json"
+        ]
+      }
+    },
+    {
+      "id": "journeys",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "Cinco pruebas completas: errores y cálculos de cotización, cambio de servicio, descarga, tres seguimientos y desconocido, menú y FAQ, páginas auxiliares, contenido estático con ejecución JS desactivada. Copia revisada con alternativa de descarga.",
+        "artifacts": [
+          "tests.json",
+          "screenshots/quote-mobile.jpg",
+          "screenshots/tracking-mobile.jpg"
+        ]
+      }
+    },
+    {
+      "id": "seo",
+      "status": "passed",
+      "required": true,
+      "detail": {
+        "status": "passed",
+        "note": "lang es, title/description, metadatos, rutas auxiliares, robots y sitemap verificados. noindex es deliberado para marca ficticia; canonical y OG absoluto solo con SITE_URL. Sin schema de empresa ficticia.",
+        "artifacts": [
+          "summary.json",
+          "../src/components/Layout.astro",
+          "../src/pages/robots.txt.ts",
+          "../src/pages/sitemap.xml.ts"
+        ]
+      }
+    },
+    {
+      "id": "field Core Web Vitals",
+      "status": "pending",
+      "required": false,
+      "detail": "Requires real-user p75 data; new demo/launch cannot prove it."
+    },
+    {
+      "id": "conversion and retention",
+      "status": "pending",
+      "required": false,
+      "detail": "Requires real leads and closed-window cohorts."
+    }
+  ],
+  "failed": 0,
+  "requiredPending": 0,
+  "noDetectedFailures": true,
+  "ready": true
+}

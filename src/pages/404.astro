@@ -1,0 +1,27 @@
+---
+import Layout from "../components/Layout.astro";
+const base = import.meta.env.BASE_URL;
+---
+
+<Layout title="Milla · Esta ruta no existe">
+  <header class="article-header container">
+    <a href={base} class="logo" aria-label="Milla, inicio">
+      milla<span>.</span>
+    </a>
+  </header>
+  <main id="main" class="article-page container">
+    <p class="eyebrow">404 / UN PEQUEÑO DESVÍO</p>
+    <h1>
+      Esta ruta
+      <br />
+      <em>no existe.</em>
+    </h1>
+    <p>
+      La página que buscas no está aquí. Volvamos al punto de partida para
+      seguir el camino.
+    </p>
+    <a class="button" href={base}>
+      Volver a Milla <span aria-hidden="true">→</span>
+    </a>
+  </main>
+</Layout>

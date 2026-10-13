@@ -1,0 +1,36 @@
+{
+  "name": "milla-parcel-landing",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview --port 4322",
+    "check": "astro check",
+    "test:e2e": "playwright test",
+    "audit": "node scripts/lighthouse.mjs --url=http://127.0.0.1:4322/ --runs=3 --expected-noindex=true",
+    "audit:gates": "node scripts/check-report.mjs --report=audits/summary.json --evidence=audits/evidence.json --output=audits/gates.json",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "4.3.3",
+    "astro": "7.3.8",
+    "tailwindcss": "4.3.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "0.9.10",
+    "@axe-core/playwright": "4.13.0",
+    "@playwright/test": "1.64.0",
+    "lighthouse": "13.5.0",
+    "prettier": "^3.9.10",
+    "prettier-plugin-astro": "^1.1.1",
+    "typescript": "6.0.3"
+  },
+  "description": "Landing de paquetería ficticia: caso de estudio de diseño y desarrollo con Astro.",
+  "license": "MIT"
+}

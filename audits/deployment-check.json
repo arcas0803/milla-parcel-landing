@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "origin": "https://arcas0803.github.io",
+  "base": "/milla-parcel-landing/",
+  "checks": [
+    "relative-to-base routes",
+    "asset prefix",
+    "absolute social image",
+    "noindex",
+    "robots agreement"
+  ]
+}
